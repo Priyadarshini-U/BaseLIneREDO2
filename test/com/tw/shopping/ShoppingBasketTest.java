@@ -34,4 +34,16 @@ public class ShoppingBasketTest {
 
         assertEquals(basket.getBasket().size(), 2);
     }
+
+    @Test
+    public void shouldReturnReceiptOnPurchase() {
+        ShoppingBasket basket = new ShoppingBasket();
+        Good good1 = new Good("rice", 34.90, new Type("food"));
+        Good good2 = new Good("wheat", 34.90, new Type("food"));
+
+        basket.addToIt(good1, 1);
+        basket.addToIt(good2, 1);
+
+        assertEquals((basket.purchase()).getClass(), Receipt.class);
+    }
 }

@@ -16,4 +16,8 @@ public class ShoppingBasket {
     public void addToIt(Good good, int quantity) {
         list.put(good, quantity);
     }
+
+    public Receipt purchase() {
+        return new Receipt(this);
+    }
 }
