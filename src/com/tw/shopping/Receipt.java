@@ -8,4 +8,8 @@ public class Receipt {
     public Receipt(ShoppingBasket basket) {
         this.items =basket.getBasket();
     }
+
+    public double sumOfItemPrices() {
+        return 0.0;
+    }
 }
