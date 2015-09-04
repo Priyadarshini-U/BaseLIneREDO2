@@ -22,4 +22,8 @@ public class Good {
             return price / 20.0;
         return 0.0;
     }
+
+    public double price(){
+        return price;
+    }
 }

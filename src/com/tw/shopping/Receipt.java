@@ -10,6 +10,12 @@ public class Receipt {
     }
 
     public double sumOfItemPrices() {
-        return 0.0;
+        double sumOfItemPrices = 0.0;
+        if(items.size() == 0)
+            return 0.0;
+        for(Good good: items.keySet()) {
+            sumOfItemPrices += good.price() *items.get(good);
+        }
+        return sumOfItemPrices;
     }
 }
