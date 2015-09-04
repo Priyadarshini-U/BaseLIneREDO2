@@ -30,6 +30,6 @@ public class Receipt {
     }
 
     public double total() {
-        return 0.0;
+        return sumOfItemPrices() + totalTax();
     }
 }
