@@ -23,6 +23,4 @@ public class Parser {
         String[] tokens = {inputLine.substring(2, index), inputLine.substring(index + 2)};
         return tokens[0];
     }
-
-
 }
