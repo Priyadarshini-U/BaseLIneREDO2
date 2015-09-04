@@ -20,4 +20,9 @@ public class GoodTest {
     public void shouldHaveZeroSalesTaxForGoodOfTypeMedicine() {
         assertEquals(new Good("paracetomol", 34.90, "medicine").salesTax(), 0.0, 0.1);
     }
+
+    @Test
+    public void shouldHaveZeroSalesTaxForGoodOfTypeBook() {
+        assertEquals(new Good("paracetomol", 34.90, "book").salesTax(), 0.0, 0.1);
+    }
 }

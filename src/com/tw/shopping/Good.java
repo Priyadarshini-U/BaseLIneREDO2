@@ -12,7 +12,7 @@ public class Good {
     }
 
     public double salesTax() {
-        if (type.equals("food") || type.equals("medicine"))
+        if (type.equals("food") || type.equals("medicine") || type.equals("book"))
             return 0.0;
         return price / 10;
     }
