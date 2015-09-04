@@ -18,6 +18,8 @@ public class Good {
     }
 
     public double importTax() {
+        if (name.contains("imported"))
+            return price / 20.0;
         return 0.0;
     }
 }

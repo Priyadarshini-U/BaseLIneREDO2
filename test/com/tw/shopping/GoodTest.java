@@ -30,4 +30,9 @@ public class GoodTest {
     public void shouldHaveZeroImportTaxForGoodThatIsNotImported() {
         assertEquals(new Good("paracetomol", 34.90, new Type("book")).importTax(), 0.0, 0.1);
     }
+
+    @Test
+    public void shouldHaveImportTaxForGoodThatIsImported() {
+        assertEquals(new Good("imported paracetomol", 34.90, new Type("book")).importTax(), 34.90 / 20, 0.1);
+    }
 }
