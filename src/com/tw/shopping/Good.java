@@ -23,7 +23,7 @@ public class Good {
         return 0.0;
     }
 
-    public double price(){
+    public double price() {
         return price;
     }
 }

@@ -1,6 +1,6 @@
 package com.tw.shopping;
 
-public class Food extends Good{
+public class Food extends Good {
 
     public Food(String name, double price, Type type) {
         super(name, price, type);

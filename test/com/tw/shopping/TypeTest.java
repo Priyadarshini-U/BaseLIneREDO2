@@ -10,5 +10,4 @@ public class TypeTest {
     public void shouldReturnFoodBookAndMedicineAsNonTaxable() {
         assertTrue(new Type("food").salesTaxExempted());
     }
-
 }
