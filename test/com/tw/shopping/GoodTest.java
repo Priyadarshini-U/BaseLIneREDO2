@@ -25,4 +25,9 @@ public class GoodTest {
     public void shouldHaveZeroSalesTaxForGoodOfTypeBook() {
         assertEquals(new Good("paracetomol", 34.90, new Type("book")).salesTax(), 0.0, 0.1);
     }
+
+    @Test
+    public void shouldHaveZeroImportTaxForGoodThatIsNotImported() {
+        assertEquals(new Good("paracetomol", 34.90, new Type("book")).importTax(), 0.0, 0.1);
+    }
 }

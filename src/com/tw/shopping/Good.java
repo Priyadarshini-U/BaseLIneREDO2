@@ -16,4 +16,8 @@ public class Good {
             return 0.0;
         return price / 10;
     }
+
+    public double importTax() {
+        return 0.0;
+    }
 }
