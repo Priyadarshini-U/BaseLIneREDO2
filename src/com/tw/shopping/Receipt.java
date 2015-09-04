@@ -28,4 +28,8 @@ public class Receipt {
         }
         return tax;
     }
+
+    public double total() {
+        return 0.0;
+    }
 }
