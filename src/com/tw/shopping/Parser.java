@@ -11,4 +11,10 @@ public class Parser {
         String quantity = inputLine.split("\\ ")[0];
         return Integer.parseInt(quantity);
     }
+
+    public double getPrice() {
+        int index = inputLine.lastIndexOf("at");
+        String[] tokens =  {inputLine.substring(0, index+2), inputLine.substring(index+2)};
+        return Double.parseDouble(tokens[1]);
+    }
 }

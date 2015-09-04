@@ -12,4 +12,10 @@ public class ParserTest {
         assertEquals(parser.getQuantity(), 1);
     }
 
+    @Test
+    public void shouldReturnPriceOfGood() {
+        Parser parser = new Parser("1 book at 12.49");
+        assertEquals(parser.getPrice(), 12.49, 0.0);
+    }
+
 }
