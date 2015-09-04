@@ -33,4 +33,20 @@ public class ReceiptTest {
         assertEquals(new Receipt(basket).totalTax(), 0.0, 0.01);
     }
 
+    @Test
+    public void shouldReturnSumOfTotalTaxForGoodsPurchased() {
+        ShoppingBasket basket = new ShoppingBasket();
+
+        Good good1 = new Good("rice", 12.49, new Type("book"));
+        Good good2 = new Good("wheat", 14.99, new Type("cd"));
+        Good good3 = new Good("choco", 14.99, new Type("food"));
+
+        basket.addToIt(good1, 1);
+        basket.addToIt(good2, 1);
+        basket.addToIt(good3, 1);
+        basket.purchase();
+
+        assertEquals(new Receipt(basket).totalTax(), 1.50 , 0.1);
+    }
+
 }
