@@ -14,7 +14,15 @@ public class Parser {
 
     public double getPrice() {
         int index = inputLine.lastIndexOf("at");
-        String[] tokens =  {inputLine.substring(0, index+2), inputLine.substring(index+2)};
+        String[] tokens = {inputLine.substring(0, index + 2), inputLine.substring(index + 2)};
         return Double.parseDouble(tokens[1]);
     }
+
+    public String getGood() {
+        int index = inputLine.lastIndexOf("at");
+        String[] tokens = {inputLine.substring(2, index), inputLine.substring(index + 2)};
+        return tokens[0];
+    }
+
+
 }

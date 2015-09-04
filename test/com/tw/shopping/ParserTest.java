@@ -18,4 +18,9 @@ public class ParserTest {
         assertEquals(parser.getPrice(), 12.49, 0.0);
     }
 
+    @Test
+    public void shouldReturnNameOfGood() {
+        Parser parser = new Parser("1 bookat 12.49");
+        assertEquals(parser.getGood(), "book");
+    }
 }
