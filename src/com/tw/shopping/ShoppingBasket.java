@@ -12,4 +12,8 @@ public class ShoppingBasket {
     public HashMap<Good, Integer> getBasket() {
         return list;
     }
+
+    public void addToIt(Good good, int quantity) {
+        list.put(good, quantity);
+    }
 }
