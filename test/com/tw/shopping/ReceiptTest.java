@@ -26,4 +26,11 @@ public class ReceiptTest {
         assertEquals(new Receipt(basket).sumOfItemPrices(), 34.90 * 3, 0.01);
     }
 
+    @Test
+    public void shouldReturnZeroAsSumOfTotalTaxOfIfNoGoodPurchased() {
+        ShoppingBasket basket = new ShoppingBasket();
+
+        assertEquals(new Receipt(basket).totalTax(), 0.0, 0.01);
+    }
+
 }

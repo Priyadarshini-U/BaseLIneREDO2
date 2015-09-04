@@ -18,4 +18,8 @@ public class Receipt {
         }
         return sumOfItemPrices;
     }
+
+    public double totalTax() {
+        return 0;
+    }
 }
