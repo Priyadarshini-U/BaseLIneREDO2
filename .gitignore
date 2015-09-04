@@ -1,0 +1,6 @@
+BaseLine.iml
+.idea/
+out/
+.DS_Store
+result.*
+TEST-*
